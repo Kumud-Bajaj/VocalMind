@@ -1,7 +1,8 @@
-# 🎤EmoSense: A Real-Time Multilingual Emotion Detection from Speech Signals
+🎤 VocalMind: Real-Time Multilingual Emotion Detection from Speech
+📌 Overview
+VocalMind is a real-time emotion detection platform that captures and analyzes emotional states from spoken language. Supporting multiple languages, it transcribes, translates, and classifies speech using powerful NLP models, offering insightful emotional feedback through a sleek interactive dashboard.
 
-## 📌 Overview
-This project is a real-time emotion detection system that analyzes emotions from voice inputs using a combination of Flask (Python) and Node.js for backend processing, and React.js for frontend visualization. It supports multilingual speech, automatically transcribes and translates audio, and classifies emotions using a RoBERTa-based transformer model.
+Built with Flask and Node.js on the backend and React.js on the frontend, VocalMind is modular, scalable, and optimized for near-instantaneous response.
 
 ---
 
@@ -13,19 +14,52 @@ This project is a real-time emotion detection system that analyzes emotions from
 
 
 
-## 🚀 Key Features
-- 🎙 **Speech-to-Text**: Converts recorded audio into text using Google Speech Recognition.
-- 🌍 **Multilingual Translation**: Detects and translates non-English text to English via Google Translate API.
-- 🤖 **Emotion Detection**: Utilizes the `roberta-base-go_emotions` model for accurate emotion classification with confidence scores.
-- 🖥 **Interactive Dashboard**: Real-time visualization of detected emotions in a responsive UI.
-- ⚡ **Instant Feedback**: Uploads and processes audio with near real-time response.
+ Features
+🎙 Speech Recognition
+Converts audio input into text using Google Speech Recognition API.
+
+🌍 Language Detection & Translation
+Detects non-English languages and translates them to English via Google Translate API.
+
+🤖 Emotion Classification
+Analyzes emotional tone using the roberta-base-go_emotions transformer model for fine-grained emotion tagging and confidence scoring.
+
+🖥 Live Dashboard
+Real-time UI displays detected emotions clearly, with responsive and interactive visuals.
+
+⚡ Low Latency Feedback
+Quickly processes and displays emotional insights upon audio upload.
+
+
 
 ---
 
-## 🛠 Tech Stack
-- **Backend**: Flask (Python), Node.js (Express), Google Speech Recognition, Google Translate API, Hugging Face Transformers
-- **Frontend**: React.js, Tailwind CSS, TypeScript
-- **Deployment**: Modular architecture — Flask (emotion analysis), Node.js (API routing), React (UI)
+🛠 Tech Stack
+Backend:
+
+Flask (Python) for emotion detection API
+
+Node.js + Express for routing and API middleware
+
+Google Speech Recognition API
+
+Google Translate API
+
+Hugging Face Transformers (roberta-base-go_emotions)
+
+Frontend:
+
+React.js for dynamic UI
+
+Tailwind CSS for styling
+
+TypeScript for type-safe development
+
+Architecture:
+
+Modular: Flask (ML logic) + Node.js (API gateway) + React (client)
+
+Reusable & scalable codebase for future expansion (e.g., video, text inputs)
 
 ---
 
